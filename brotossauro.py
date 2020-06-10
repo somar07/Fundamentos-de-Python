@@ -1,0 +1,16 @@
+"""
+palavra = 'brontosaurus'
+d = dict()
+for c in palavra:
+    if c not in d:
+        d[c] = 1
+    else:
+        d[c] = d[c] + 1
+print(d)
+
+"""
+word = 'brontosaurus'
+d = dict()
+for c in word:
+    d[c] = d.get(c,0) + 1
+print(d)
